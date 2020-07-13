@@ -11,41 +11,119 @@ nav li {
   margin-left: 12px;
   margin-bottom: 0;
   text-decoration: underline;
+  color: #393939;
+}
+.logo {
+  display: inline-block;
+  margin-top: 0;
+  align-items: flex-start;
+  width: 200px;
+  height: auto;
+  margin-left: 30px;
 }
 .gradient-button {
-  background-color: rgb(30, 30, 113);
+  background: -webkit-linear-gradient(#ab00ff, #007bff);
   text-decoration: none !important;
   color: white;
   padding: 0.5em;
-  border-radius: 6px;
+  border-radius: 20px;
   width: 8em;
   text-align: center;
   display: inline-block;
 }
-/*---- Body --------------------------------------*/
+/*---- Body Content --------------------------------------*/
 
-h2 {
-  text-align: center;
+@font-face {
+  font-family: Futura;
+  src: url(/zenith-assets/fonts/futura-book.ttf);
+}
+@font-face {
+  font-family: Futura;
+  src: url(/zenith-assets/fonts/futura-heavy.ttf);
+  font-weight: bold;
+}
+body {
+  font-family: Futura;
 }
 h1 {
+  text-align: left;
+  padding: 10px;
+  font-size: 40px;
+  color: #393939;
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 50px;
+  background: -webkit-linear-gradient(#ab00ff, #007bff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3 {
   text-align: center;
   color: aliceblue;
+  font-size: 40px;
+  padding: 35px;
 }
+
+img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.imbound-card {
+  margin: auto;
+  display: grid;
+  padding: 30px;
+}
+.signup-form {
+  background: -webkit-linear-gradient(#ab00ff, #007bff);
+  padding: 100px;
+}
+/* ---- Body Layout --------------------------------------*/
+
 .block1 {
-  background-image: url(hero-bg-texture.png);
+  padding: 250px;
+}
+.feature-boxes {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  color: #393939;
+  font-size: 20px;
 }
 .form {
   display: block;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
 }
+
 .form-content {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
 }
-.signup-form {
-  background-color: rgb(37, 52, 218);
-  padding: 20px;
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  justify-content: space-evenly;
+  padding: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* ---- Mobile Styles -------------------------------------- */
+
+@media (max-width: 481px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3px;
+  }
 }
